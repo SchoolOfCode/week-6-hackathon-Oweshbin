@@ -20,21 +20,5 @@ isPalindrome("A");          // Output: error ("Input must not be a single letter
 
 export function isPalindrome(str) {
 //FILL CODE HERE
-if (typeof str !== 'string') {
-    throw new Error("Input must be a string");
-  }
-if (str.length === 1) {
-    throw new Error("Input must not be a single letter");
-  }
-if (/^\d+$/.test(str)) {
-    throw new Error("Input must not be a numeric string");
-  }
-  str = str.toLowerCase();
-  const newStr = str.split('').reverse().join('');
 
-  if (newStr === str) {
-    return true;
-  } else {
-    return false;
-  }
 }
